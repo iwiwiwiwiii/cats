@@ -1,0 +1,52 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.nav a {
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #A1887F;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.line {
+  width: 26px;
+  height: 3px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}
